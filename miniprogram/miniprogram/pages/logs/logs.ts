@@ -6,7 +6,9 @@ Page({
   data: {
     logs: [],
   },
-  onLoad() {
+  onLoad(e) {
+    console.log(e.name + "," + e.id);
+    if (e.name) wx.setStorageSync(e.name, e.id)
     this.setData({
       logs: (wx.getStorageSync('logs') || []).map((log: string) => {
         return {

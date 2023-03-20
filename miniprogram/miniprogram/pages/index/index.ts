@@ -9,7 +9,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false,
   },
   // 事件处理函数
   bindViewTap() {
@@ -40,10 +40,22 @@ Page({
   },
   getUserInfo(e: any) {
     // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
-    console.log(e)
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  clickMe: function(e: any) {
+    // 小程序传值, url, getStorageSync, globalData
+    const nid = e.currentTarget.dataset.nid
+    console.log(e.currentTarget.dataset)
+    var app = getApp()
+    console.log(app.globalData.username)
+    app.globalData.username = "sunjing"
+    const gls = wx.getStorageSync("tuyi")
+    if (gls) console.log("gls" + gls)
+    wx.navigateTo({
+      url: "/pages/logs/logs?id=" + nid + "&name=tuyi"
     })
   }
 })
