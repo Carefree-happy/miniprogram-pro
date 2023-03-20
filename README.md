@@ -17,3 +17,7 @@
 - tabBar.list
 - 组件 text view image
 - flex 简单布局
+
+4、跨页面跳转传值
+- wx.navigateTo, 标签跳转
+- url, getStorageSync, globalData
