@@ -1,0 +1,22 @@
+<view class="menu">
+  <view class="item">
+    <image src="../../static/hg.jpg"/>
+    <text>配置</text>
+  </view>
+  <view class="item">
+    <image src="../../static/hg.jpg"/>
+    <text>配置</text>
+  </view>
+  <view class="item">
+    <image src="../../static/hg.jpg"/>
+    <text>配置</text>
+  </view>
+  <view class="item">
+    <image src="../../static/hg.jpg"/>
+    <text>配置</text>
+  </view>
+  <view class="item">
+    <image src="../../static/hg.jpg"/>
+    <text>配置</text>
+  </view>
+</view>
