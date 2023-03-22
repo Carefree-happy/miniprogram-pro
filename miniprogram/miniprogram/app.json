@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
+    "pages/location/location",
     "pages/signin/signin",
-    "pages/location/location"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -22,7 +21,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/signin/signin",
         "text": "首页",
         "iconPath": "static/tabbar/ic_menu_choice_nor.png",
         "selectedIconPath": "static/tabbar/ic_menu_choice_pressed.png"

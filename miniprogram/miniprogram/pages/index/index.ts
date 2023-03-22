@@ -45,26 +45,7 @@ Page({
     })
   },
 
-  getUserLocation() {
-    wx.getLocation({
-      type: 'wgs84',
-      success (res) {
-        const latitude = res.latitude
-        const longitude = res.longitude
-        wx.request({
-          url: `https://apis.map.qq.com/ws/geocoder/v1/?location=${latitude},${longitude}&key=	
-          ZIXBZ-YGTHU-75RV6-GYJA6-L6GIZ-5BFEO`,
-          success(res) {
-              console.log(res)
-          }
-        })
-        console.log(latitude)
-      },
-      fail (res) {
-        wx.openSetting({})
-        console.log(res)
-      }
-    })     
+  getUserLocation() {  
   },
 
   clickMe: function(e: any) {

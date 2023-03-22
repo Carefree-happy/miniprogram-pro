@@ -21,3 +21,8 @@
 4、跨页面跳转传值
 - wx.navigateTo, 标签跳转
 - url, getStorageSync, globalData
+
+5、数据绑定
+- 选择默认编辑页面
+
+6、小程序发布 3.22
