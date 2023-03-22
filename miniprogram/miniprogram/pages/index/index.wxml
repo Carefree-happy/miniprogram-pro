@@ -1,9 +1,10 @@
 <!--index.wxml-->
+<view class="nav">
+  <view class="nav-item" data-nid="123456" data-mid="true" bindtap="clickMe">函数跳转</view>
+<navigator class="nav-item" url="/pages/logs/logs">标签跳转</navigator>
+</view>
+
 <view class="container">
-  <view data-nid="123456" data-mid="true" bindtap="clickMe">点我跳转</view>
-
-  <navigator url="/pages/logs/logs">简单跳转</navigator>
-
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
       <view class="userinfo-avatar" bindtap="bindViewTap">

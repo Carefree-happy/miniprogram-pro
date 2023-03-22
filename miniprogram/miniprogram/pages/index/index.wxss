@@ -1,4 +1,18 @@
 /**index.wxss**/
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.nav .nav-item {
+  margin: 10rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #9932CD;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;

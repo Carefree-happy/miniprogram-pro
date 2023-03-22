@@ -20,3 +20,9 @@
     <text>配置</text>
   </view>
 </view>
+<view>
+  <text>{{message}}</text>
+  <button bindtap="changeData">button</button>
+  <button bindtap="getUsername">get nickName</button>
+  <button open-type="getUserInfo" bindgetuserinfo="usrInfo">获取信息</button>
+</view>
