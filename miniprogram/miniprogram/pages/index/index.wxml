@@ -5,6 +5,7 @@
 </view>
 
 <view class="container">
+  获取用户信息
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
       <view class="userinfo-avatar" bindtap="bindViewTap">
@@ -22,7 +23,10 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="user-location" bindtap="getUserLocation">
+  获取用户地理位置
+  </view>
+  <view bindtap="worksw">
+    打卡签到
   </view>
 </view>

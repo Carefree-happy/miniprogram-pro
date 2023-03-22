@@ -1,7 +1,13 @@
 // app.ts
+import QQMapWX from "./utils/qqmap-wx-jssdk.min.js"
+
 App<IAppOption>({
   globalData: {
-    username: 'napolun'
+    username: 'napolun',
+    // 实例化API核心类
+    qqmapsdk: new QQMapWX({
+      key: 'ZIXBZ-YGTHU-75RV6-GYJA6-L6GIZ-5BFEO'
+    }),
   },
   onLaunch() {
     // 展示本地存储能力

@@ -2,13 +2,22 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/signin/signin"
+    "pages/signin/signin",
+    "pages/location/location"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#9932CD",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
+  },
+  "requiredPrivateInfos": [
+    "getFuzzyLocation"
+  ],
+  "permission": {
+    "scope.userFuzzyLocation": {
+      "desc": "需要获取你的信息"
+    }
   },
   "tabBar": {
     "list": [
@@ -19,7 +28,7 @@
         "selectedIconPath": "static/tabbar/ic_menu_choice_pressed.png"
       },
       {
-        "pagePath": "pages/signin/signin",
+        "pagePath": "pages/location/location",
         "text": "登录",
         "iconPath": "static/tabbar/ic_menu_me_nor.png",
         "selectedIconPath": "static/tabbar/ic_menu_me_pressed.png"

@@ -3,30 +3,5 @@
   "setting": {
     "compileHotReLoad": true
   },
-  "condition": {
-    "miniprogram": {
-      "list": [
-        {
-          "name": "",
-          "pathName": "pages/index/index",
-          "query": "",
-          "launchMode": "default",
-          "scene": null,
-          "partialCompile": {
-            "enabled": false,
-            "pages": [
-              "pages/signin/signin"
-            ]
-          }
-        },
-        {
-          "name": "",
-          "pathName": "pages/signin/signin",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        }
-      ]
-    }
-  }
+  "condition": {}
 }

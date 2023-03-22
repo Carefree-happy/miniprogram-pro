@@ -3,7 +3,8 @@
 interface IAppOption {
   globalData: {
     userInfo?: WechatMiniprogram.UserInfo,
-    username?: string
+    username?: string,
+    qqmapsdk?: Object,
   }
   userInfoReadyCallback?: WechatMiniprogram.GetUserInfoSuccessCallback,
 }

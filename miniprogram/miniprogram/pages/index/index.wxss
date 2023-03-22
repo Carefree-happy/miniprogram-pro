@@ -28,6 +28,6 @@
   border-radius: 50%;
 }
 
-.usermotto {
-  margin-top: 200px;
+.user-location {
+  margin-top: 10rpx;
 }

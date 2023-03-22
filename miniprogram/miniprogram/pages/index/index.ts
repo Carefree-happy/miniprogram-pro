@@ -4,7 +4,6 @@ const app = getApp<IAppOption>()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -45,6 +44,29 @@ Page({
       hasUserInfo: true
     })
   },
+
+  getUserLocation() {
+    wx.getLocation({
+      type: 'wgs84',
+      success (res) {
+        const latitude = res.latitude
+        const longitude = res.longitude
+        wx.request({
+          url: `https://apis.map.qq.com/ws/geocoder/v1/?location=${latitude},${longitude}&key=	
+          ZIXBZ-YGTHU-75RV6-GYJA6-L6GIZ-5BFEO`,
+          success(res) {
+              console.log(res)
+          }
+        })
+        console.log(latitude)
+      },
+      fail (res) {
+        wx.openSetting({})
+        console.log(res)
+      }
+    })     
+  },
+
   clickMe: function(e: any) {
     // 小程序传值, url, getStorageSync, globalData
     const nid = e.currentTarget.dataset.nid
@@ -56,6 +78,12 @@ Page({
     if (gls) console.log("gls" + gls)
     wx.navigateTo({
       url: "/pages/logs/logs?id=" + nid + "&name=tuyi"
+    })
+  },
+
+  works: function() {
+    wx.navigateTo({
+      url: "pages/location/location"
     })
   }
 })
